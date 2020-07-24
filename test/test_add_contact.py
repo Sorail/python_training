@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-
 #  __author__ = 'Alexey Buchkin'
 
-#  __author__ = 'Alexey Buchkin'
 
 import pytest
 
