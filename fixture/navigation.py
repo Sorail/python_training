@@ -1,0 +1,17 @@
+#  __author__ = 'Alexey Buchkin'
+
+
+class NavigationHelper:
+
+    def __init__(self, app):
+        self.app = app
+
+    def open_home_page(self):
+        wd = self.app.wd
+        # open home page
+        wd.get("http://localhost/addressbook/")
+
+    def return_to_home_page(self):
+        wd = self.app.wd
+        # return to home page
+        wd.find_element_by_link_text("home").click()
