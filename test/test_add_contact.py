@@ -3,8 +3,8 @@
 
 import pytest
 
-from contact import Contact
-from application import Application
+from model.contact import Contact
+from fixture.application import Application
 
 
 @pytest.fixture
