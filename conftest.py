@@ -1,7 +1,5 @@
 #  __author__ = 'Alexey Buchkin'
 
-#  __author__ = 'Alexey Buchkin'
-
 import pytest
 
 from fixture.application import Application

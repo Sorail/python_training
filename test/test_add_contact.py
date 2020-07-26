@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-#  __author__ = 'Alexey Buchkin'
-
 #  __author__ = 'Alexey Buchkin'
 
 from model.contact import Contact
