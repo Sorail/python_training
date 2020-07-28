@@ -10,7 +10,7 @@ class Application:
 
     def __init__(self):
         self.wd = WebDriver()
-        self.wd.implicitly_wait(10)
+        self.wd.implicitly_wait(1)
         self.navigation = NavigationHelper(self)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
