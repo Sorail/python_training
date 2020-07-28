@@ -12,12 +12,12 @@ class GroupHelper:
         # init group creation
         wd.find_element_by_name("new").click()
         # fill group form
-        self.fill_group_form(group)
+        self.fill_form(group)
         # submit group creation
         wd.find_element_by_name("submit").click()
         self.return_to_group_tab()
 
-    def fill_group_form(self, group):
+    def fill_form(self, group):
         wd = self.app.wd
         self.change_field("group_name", group.name)
         self.change_field("group_header", group.header)
@@ -33,12 +33,12 @@ class GroupHelper:
     def delete_first(self):
         wd = self.app.wd
         self.open_group_page()
-        self.select_first_group()
+        self.select_first()
         # submit deletion
         wd.find_element_by_name("delete").click()
         self.return_to_group_tab()
 
-    def select_first_group(self):
+    def select_first(self):
         wd = self.app.wd
         # select first group
         wd.find_element_by_name("selected[]").click()
@@ -46,11 +46,11 @@ class GroupHelper:
     def edit_first(self, group):
         wd = self.app.wd
         self.open_group_page()
-        self.select_first_group()
+        self.select_first()
         # submit edit
         wd.find_element_by_name("edit").click()
         # fill group form
-        self.fill_group_form(group)
+        self.fill_form(group)
         # submit group creation
         wd.find_element_by_name("update").click()
         self.return_to_group_tab()
@@ -64,3 +64,8 @@ class GroupHelper:
         wd = self.app.wd
         # return to group page
         wd.find_element_by_link_text("group page").click()
+
+    def count(self):
+        wd = self.app.wd
+        self.open_group_page()
+        return len(wd.find_elements_by_name("selected[]"))
