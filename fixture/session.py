@@ -31,12 +31,14 @@ class SessionHelper:
         wd = self.app.wd
         # logout
         wd.find_element_by_link_text("Logout").click()
+        wd.find_element_by_name("user")
 
     def ensure_logout(self):
         wd = self.app.wd
         # logout
         if self.is_logged_in():
             wd.find_element_by_link_text("Logout").click()
+            wd.find_element_by_name("user")
 
     def is_logged_in(self):
         wd = self.app.wd
