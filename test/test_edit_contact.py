@@ -1,9 +1,10 @@
 #  __author__ = 'Alexey Buchkin'
 
 from model.contact import Contact
+from random import randrange
 
 
-def test_edit_first_contract(app):
+def test_edit_some_contract(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname="firstname", middlename="middlename", lastname="lastname",
                                    nickname="nickname", title="title", company="company", address="address",
@@ -14,6 +15,7 @@ def test_edit_first_contract(app):
                                    address2="address2", phone2="phone2",
                                    notes="notes"))
     old_contacts = app.contact.get_contact_list()
+    index = randrange(len(old_contacts))
     contract = Contact(firstname="qazwsx", middlename="edcrfv", lastname="tgbyhn", nickname="yhnujm",
                        title="zaqxsw", company="cdevfr", address="tgbyhnujm", home="tgbrfv", mobile="cderfv",
                        work="tgbnhy", fax="rfvbgtyh", email="fdsfds@fdsf.ru", email2="fdsfdg@dfds.ru",
@@ -21,9 +23,9 @@ def test_edit_first_contract(app):
                        byear="1980",
                        aday="15", amonth="March", ayear="1985", address2="hgfhgfdgfdgdfgdfs",
                        phone2="gfdhsgfhgfhgfd", notes="gfdsgfdgfdgdfsgfd")
-    contract.id = old_contacts[0].id
-    app.contact.edit_first(contract)
+    contract.id = old_contacts[index].id
+    app.contact.edit_by_index(contract, index)
     assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    old_contacts[0] = contract
+    old_contacts[index] = contract
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
