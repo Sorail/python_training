@@ -50,7 +50,7 @@ class GroupHelper:
 
     def select_by_index(self, index):
         wd = self.app.wd
-        # select first group
+        # select group
         wd.find_elements_by_name("selected[]")[index].click()
 
     def edit_first(self, group):
