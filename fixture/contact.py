@@ -89,11 +89,11 @@ class ContactHelper:
             elif "month" in field_name:
                 wd.find_element_by_name(field_name).click()
                 Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
-                wd.find_element_by_xpath("(//option[@value='%s'])" % text).click()
+                wd.find_element_by_xpath("(//select[@name='%s']/option[@value='%s'])" % (field_name, text)).click()
             elif "year" in field_name:
-                wd.find_element_by_xpath("//input[@name='" + field_name + "']").click()
-                wd.find_element_by_xpath("//input[@name='" + field_name + "']").clear()
-                wd.find_element_by_xpath("//input[@name='" + field_name + "']").send_keys(text)
+                wd.find_element_by_xpath("//input[@name='%s']" % field_name).click()
+                wd.find_element_by_xpath("//input[@name='%s']" % field_name).clear()
+                wd.find_element_by_xpath("//input[@name='%s']" % field_name).send_keys(text)
             else:
                 wd.find_element_by_name(field_name).click()
                 wd.find_element_by_name(field_name).clear()
