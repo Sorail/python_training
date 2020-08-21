@@ -38,7 +38,13 @@ class Contact:
         self.all_emails_from_homepage = all_emails_from_homepage
 
     def __repr__(self):
-        return "%s:%s:%s" % (self.id, self.firstname, self.lastname)
+        return "id:%s;firstname:%s;middlename:%s;lastname:%s;nickname:%s;title:%s;company:%s;address:%s;home:%s;" \
+               "mobile:%s;work:%s;fax:%s;email:%s;email2:%s;email3:%s;homepage:%s;bday:%s;bmonth:%s;byear:%s;" \
+               "aday:%s;amonth:%s;ayear:%s;address2:%s;phone2:%s;notes:%s" % \
+               (self.id, self.firstname, self.middlename, self.lastname, self.nickname, self.title,
+                self.company, self.address, self.home, self.mobile, self.work,  self.fax, self.email,
+                self.email2,  self.email3, self.homepage, self.bday, self.bmonth, self.byear,
+                self.aday,  self.amonth, self.ayear, self.address2, self.phone2, self.notes)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) \

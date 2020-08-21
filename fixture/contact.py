@@ -36,7 +36,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
         self.contact_cache = None
-        sleep(5)
+        sleep(3)
 
     def edit_first(self, contact):
         self.edit_by_index(contact, 0)
@@ -96,7 +96,7 @@ class ContactHelper:
             if "day" in field_name:
                 wd.find_element_by_name(field_name).click()
                 Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
-                wd.find_element_by_xpath("(//option[@value='%s'])" % text).click()
+                wd.find_element_by_xpath("(//select[@name='%s']/option[@value='%s'])" % (field_name, text)).click()
             elif "month" in field_name:
                 wd.find_element_by_name(field_name).click()
                 Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
@@ -145,7 +145,7 @@ class ContactHelper:
                 self.contact_cache.append(Contact(firstname=contact_firstname, lastname=contact_lastname, id=contact_id,
                                                   address=contact_address, all_emails_from_homepage=contact_all_emails,
                                                   all_phones_from_homepage=contact_all_phones))
-            return list(self.contact_cache)
+        return list(self.contact_cache)
 
     def get_contact_info_from_edit_page(self, index):
         wd = self.app.wd
