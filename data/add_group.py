@@ -1,4 +1,5 @@
 #  __author__ = 'Alexey Buchkin'
+
 from model.group import Group
 import random
 import string
