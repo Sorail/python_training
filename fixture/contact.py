@@ -16,9 +16,9 @@ class ContactHelper:
         self.open_contact_page()
         # init contact creation
         wd.find_element_by_link_text("add new").click()
-        self.fill_form(contact)
         wd.find_element_by_name("new_group").click()
         wd.find_element_by_xpath("//option[@value='[none]']").click()
+        self.fill_form(contact)
         # submit contact creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
         self.return_to_home_page()
@@ -30,7 +30,7 @@ class ContactHelper:
     def delete_by_index(self, index):
         wd = self.app.wd
         self.open_contact_page()
-        # select first contact
+        # select contact
         wd.find_elements_by_name("selected[]")[index].click()
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -41,7 +41,7 @@ class ContactHelper:
     def delete_by_id(self, id):
         wd = self.app.wd
         self.open_contact_page()
-        # select first contact
+        # select contact
         wd.find_element_by_xpath("//input[@id='%s']" % id).click()
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -115,6 +115,7 @@ class ContactHelper:
         self.change_field("address2", contact.address2)
         self.change_field("phone2", contact.phone2)
         self.change_field("notes", contact.notes)
+        self.change_field("new_group", contact.group)
 
     def change_field(self, field_name, text):
         wd = self.app.wd
@@ -131,6 +132,9 @@ class ContactHelper:
                 wd.find_element_by_xpath("//input[@name='%s']" % field_name).click()
                 wd.find_element_by_xpath("//input[@name='%s']" % field_name).clear()
                 wd.find_element_by_xpath("//input[@name='%s']" % field_name).send_keys(text)
+            elif "group" in field_name:
+                wd.find_element_by_name(field_name).click()
+                wd.find_element_by_xpath("(//select[@name='%s']/option[@value='%s'])" % (field_name, text.id)).click()
             else:
                 wd.find_element_by_name(field_name).click()
                 wd.find_element_by_name(field_name).clear()
@@ -173,6 +177,22 @@ class ContactHelper:
                                                   all_phones_from_homepage=contact_all_phones))
         return list(self.contact_cache)
 
+    def get_contact_in_group_list(self, group):
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.open_contact_page()
+            self.contact_cache = []
+            wd.find_element_by_xpath("//select[@name='group']").click()
+            wd.find_element_by_xpath("(//select[@name='group']/option[@value='%s'])" % group.id).click()
+            for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+                contact_values = element.find_elements_by_css_selector("td")
+                contact_firstname = contact_values[2].text
+                contact_lastname = contact_values[1].text
+                contact_id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(firstname=contact_firstname,
+                                                  lastname=contact_lastname, id=contact_id))
+        return list(self.contact_cache)
+
     def get_contact_info_from_edit_page(self, index):
         wd = self.app.wd
         self.open_edit_by_index(index)
@@ -200,3 +220,36 @@ class ContactHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         id = re.search('(id=)(.*)',  wd.current_url).group(2)
         return Contact(id=id, home=home, mobile=mobile, work=work, phone2=phone2)
+
+    def add_group_to_contract(self, contact, id):
+        wd = self.app.wd
+        self.open_edit_by_id(id)
+        self.fill_form(contact)
+        # submit contact creation
+        wd.find_element_by_name("update").click()
+        self.return_to_home_page()
+        self.contact_cache = None
+
+    def add_group_by_id(self, contract, group):
+        wd = self.app.wd
+        self.open_contact_page()
+        # select contact
+        wd.find_element_by_xpath("//input[@id='%s']" % contract.id).click()
+        # select group
+        wd.find_element_by_xpath("//select[@name='to_group']").click()
+        wd.find_element_by_xpath("(//select[@name='to_group']/option[@value='%s'])" % group.id).click()
+        # submit deletion
+        wd.find_element_by_xpath("//input[@value='Add to']").click()
+        self.contact_cache = None
+
+    def del_group_by_id(self, contract, group):
+        wd = self.app.wd
+        self.open_contact_page()
+        # select group
+        wd.find_element_by_xpath("//select[@name='group']").click()
+        wd.find_element_by_xpath("(//select[@name='group']/option[@value='%s'])" % group.id).click()
+        # select contact
+        wd.find_element_by_xpath("//input[@id='%s']" % contract.id).click()
+        # submit deletion
+        wd.find_element_by_xpath("//input[@name='remove']").click()
+        self.contact_cache = None

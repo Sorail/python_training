@@ -8,7 +8,8 @@ class Contact:
     def __init__(self, firstname=None, middlename=None, lastname=None, nickname=None, title=None, company=None,
                  address=None, home=None, mobile=None, work=None, fax=None, email=None, email2=None, email3=None,
                  homepage=None, bday=None, bmonth=None, byear=None, aday=None, amonth=None, ayear=None, address2=None,
-                 phone2=None, notes=None, id=None, all_phones_from_homepage=None, all_emails_from_homepage=None):
+                 phone2=None, notes=None, id=None, all_phones_from_homepage=None, all_emails_from_homepage=None,
+                 group=None):
         self.notes = notes
         self.phone2 = phone2
         self.address2 = address2
@@ -36,15 +37,11 @@ class Contact:
         self.id = id
         self.all_phones_from_homepage = all_phones_from_homepage
         self.all_emails_from_homepage = all_emails_from_homepage
+        self.group = group
 
     def __repr__(self):
-        return "id:%s;firstname:%s;middlename:%s;lastname:%s;nickname:%s;title:%s;company:%s;address:%s;home:%s;" \
-               "mobile:%s;work:%s;fax:%s;email:%s;email2:%s;email3:%s;homepage:%s;bday:%s;bmonth:%s;byear:%s;" \
-               "aday:%s;amonth:%s;ayear:%s;address2:%s;phone2:%s;notes:%s" % \
-               (self.id, self.firstname, self.middlename, self.lastname, self.nickname, self.title,
-                self.company, self.address, self.home, self.mobile, self.work,  self.fax, self.email,
-                self.email2,  self.email3, self.homepage, self.bday, self.bmonth, self.byear,
-                self.aday,  self.amonth, self.ayear, self.address2, self.phone2, self.notes)
+        return "id:%s;firstname:%s;middlename:%s;lastname:%s" % \
+               (self.id, self.firstname, self.middlename, self.lastname)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) \
