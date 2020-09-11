@@ -83,6 +83,20 @@ class GroupHelper:
         self.return_to_group_tab()
         self.group_cache = None
 
+    def edit_by_id(self, group, id):
+        wd = self.app.wd
+        self.open_group_page()
+        self.select_by_id(id)
+        # submit edit
+        wd.find_element_by_name("edit").click()
+        # fill group form
+        self.fill_form(group)
+        # submit group creation
+        wd.find_element_by_name("update").click()
+        self.return_to_group_tab()
+        self.group_cache = None
+
+
     def open_group_page(self):
         wd = self.app.wd
         if wd.current_url.endswith("/group.php") and len(wd.find_elements_by_name("new")) > 0:
