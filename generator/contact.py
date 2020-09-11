@@ -11,13 +11,13 @@ import getopt
 import sys
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of contracts", "file"])
+    opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of contacts", "file"])
 except getopt.GetoptError as err:
     getopt.usage()
     sys.exit(2)
 
 n = 5
-f = "/data/contracts.json"
+f = "/data/contacts.json"
 
 for o, a in opts:
     if o == "-n":
