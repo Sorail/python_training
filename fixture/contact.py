@@ -122,12 +122,12 @@ class ContactHelper:
         if text is not None:
             if "day" in field_name:
                 wd.find_element_by_name(field_name).click()
-                Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
+                # Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
                 wd.find_element_by_xpath("(//select[@name='%s']/option[@value='%s'])" % (field_name, text)).click()
             elif "month" in field_name:
                 wd.find_element_by_name(field_name).click()
                 Select(wd.find_element_by_name(field_name)).select_by_visible_text("%s" % text)
-                wd.find_element_by_xpath("(//select[@name='%s']/option[@value='%s'])" % (field_name, text)).click()
+                wd.find_element_by_xpath("(//select[@name='%s']/option[text()='%s'])" % (field_name, text)).click()
             elif "year" in field_name:
                 wd.find_element_by_xpath("//input[@name='%s']" % field_name).click()
                 wd.find_element_by_xpath("//input[@name='%s']" % field_name).clear()
