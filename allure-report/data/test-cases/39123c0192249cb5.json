@@ -1,0 +1,146 @@
+{
+  "uid" : "39123c0192249cb5",
+  "name" : "test_edit_group.test_edit_some_group",
+  "fullName" : "test.test_edit_group.test_edit_some_group",
+  "historyId" : "f9eb64d5f4d24d98f178d22de339ba14",
+  "time" : {
+    "start" : 1600216449410,
+    "stop" : 1600216450907,
+    "duration" : 1497
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given check availability of at least one group",
+      "time" : {
+        "start" : 1600216449540,
+        "stop" : 1600216449559,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a groups list",
+      "time" : {
+        "start" : 1600216449568,
+        "stop" : 1600216449588,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]",
+      "time" : {
+        "start" : 1600216449595,
+        "stop" : 1600216449614,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I edit a group: 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK to set new pram from group: 331; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222",
+      "time" : {
+        "start" : 1600216449621,
+        "stop" : 1600216450877,
+        "duration" : 1256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then the new group pram list is equal to the old list with the change old group",
+      "time" : {
+        "start" : 1600216450886,
+        "stop" : 1600216450906,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N7CDTT7"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "4848-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_edit_group.test_edit_some_group"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39123c0192249cb5.json",
+  "parameterValues" : [ ]
+}

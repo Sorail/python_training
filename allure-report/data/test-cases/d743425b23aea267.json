@@ -1,0 +1,206 @@
+{
+  "uid" : "d743425b23aea267",
+  "name" : "test_del_contract_from_group.test_del_contact_from_group",
+  "fullName" : "test.test_del_contract_from_group.test_del_contact_from_group",
+  "historyId" : "3b145058a8e4a5ddfe5c00183dd9a3e1",
+  "time" : {
+    "start" : 1600216438197,
+    "stop" : 1600216439119,
+    "duration" : 922
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given check availability of at least one group",
+      "time" : {
+        "start" : 1600216438256,
+        "stop" : 1600216438279,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a random group from group",
+      "time" : {
+        "start" : 1600216438287,
+        "stop" : 1600216438315,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given check availability of at least one contract in groups",
+      "time" : {
+        "start" : 1600216438324,
+        "stop" : 1600216438349,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a contacts list in groups",
+      "time" : {
+        "start" : 1600216438357,
+        "stop" : 1600216438377,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:]",
+      "time" : {
+        "start" : 1600216438384,
+        "stop" : 1600216438402,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a group from contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .",
+      "time" : {
+        "start" : 1600216438409,
+        "stop" : 1600216438430,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a contacts in a group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK",
+      "time" : {
+        "start" : 1600216438437,
+        "stop" : 1600216438459,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I delete contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname . from group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK",
+      "time" : {
+        "start" : 1600216438465,
+        "stop" : 1600216439091,
+        "duration" : 626
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then the new list contracts is equal to the old list with the remove group from contact id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .: ",
+      "time" : {
+        "start" : 1600216439099,
+        "stop" : 1600216439119,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N7CDTT7"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "4848-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_del_contract_from_group.test_del_contact_from_group"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d743425b23aea267.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,146 @@
+{
+  "uid" : "54ed39bc0e9d8bcf",
+  "name" : "test_edit_contact.test_edit_some_contact",
+  "fullName" : "test.test_edit_contact.test_edit_some_contact",
+  "historyId" : "3a8373c8f432c412a4bffe8c7dff47ca",
+  "time" : {
+    "start" : 1600216440814,
+    "stop" : 1600216449394,
+    "duration" : 8580
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given check availability of at least one contract",
+      "time" : {
+        "start" : 1600216440855,
+        "stop" : 1600216440874,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a contacts list",
+      "time" : {
+        "start" : 1600216440881,
+        "stop" : 1600216440900,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]",
+      "time" : {
+        "start" : 1600216440907,
+        "stop" : 1600216440935,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I edit a contact: id:237;firstname:;middlename:None;lastname: to set new pram from contact: id:237;firstname:qazwsx;middlename:edcrfv;lastname:tgbyhn",
+      "time" : {
+        "start" : 1600216440947,
+        "stop" : 1600216449367,
+        "duration" : 8420
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then the new contact pram list is equal to the old list with the change old contact",
+      "time" : {
+        "start" : 1600216449374,
+        "stop" : 1600216449394,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N7CDTT7"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "4848-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_edit_contact.test_edit_some_contact"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54ed39bc0e9d8bcf.json",
+  "parameterValues" : [ ]
+}

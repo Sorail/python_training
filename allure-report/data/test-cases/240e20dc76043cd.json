@@ -1,0 +1,140 @@
+{
+  "uid" : "240e20dc76043cd",
+  "name" : "test_phones.test_phones_on_view_page",
+  "fullName" : "test.test_phones.test_phones_on_view_page",
+  "historyId" : "db45cf1d4ef19a6ec95c426ab8a4a487",
+  "time" : {
+    "start" : 1600216454853,
+    "stop" : 1600216457642,
+    "duration" : 2789
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '\n  - home|CD )!8 \n  ?            -\n  + home|CD )!8",
+  "statusTrace" : "app = <fixture.application.Application object at 0x00000140ED6070D0>\n\n    def test_phones_on_view_page(app):\n        with pytest.allure.step('Given a contact list from UI'):\n            all_contact_from_home_page = app.contact.get_contact_list()\n        with pytest.allure.step('Given info random contact from view page'):\n            index = randrange(len(all_contact_from_home_page))\n            contact_from_view_page = app.contact.get_contact_info_from_view_page(index)\n        with pytest.allure.step('Given a info from contact from edit page'):\n            contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        with pytest.allure.step('Then equal info from view page with info from edit page'):\n>           assert contact_from_view_page.home == contact_from_edit_page.home\nE           AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '\nE             - home|CD )!8 \nE             ?            -\nE             + home|CD )!8\n\ntest\\test_phones.py:33: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '\n  - home|CD )!8 \n  ?            -\n  + home|CD )!8",
+    "statusTrace" : "app = <fixture.application.Application object at 0x00000140ED6070D0>\n\n    def test_phones_on_view_page(app):\n        with pytest.allure.step('Given a contact list from UI'):\n            all_contact_from_home_page = app.contact.get_contact_list()\n        with pytest.allure.step('Given info random contact from view page'):\n            index = randrange(len(all_contact_from_home_page))\n            contact_from_view_page = app.contact.get_contact_info_from_view_page(index)\n        with pytest.allure.step('Given a info from contact from edit page'):\n            contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        with pytest.allure.step('Then equal info from view page with info from edit page'):\n>           assert contact_from_view_page.home == contact_from_edit_page.home\nE           AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '\nE             - home|CD )!8 \nE             ?            -\nE             + home|CD )!8\n\ntest\\test_phones.py:33: AssertionError",
+    "steps" : [ {
+      "name" : "Given a contact list from UI",
+      "time" : {
+        "start" : 1600216454892,
+        "stop" : 1600216454910,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given info random contact from view page",
+      "time" : {
+        "start" : 1600216454918,
+        "stop" : 1600216456195,
+        "duration" : 1277
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a info from contact from edit page",
+      "time" : {
+        "start" : 1600216456202,
+        "stop" : 1600216457611,
+        "duration" : 1409
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then equal info from view page with info from edit page",
+      "time" : {
+        "start" : 1600216457619,
+        "stop" : 1600216457638,
+        "duration" : 19
+      },
+      "status" : "failed",
+      "statusMessage" : "app = <fixture.application.Application object at 0x00000140ED6070D0>\n\n    def test_phones_on_view_page(app):\n        with pytest.allure.step('Given a contact list from UI'):\n            all_contact_from_home_page = app.contact.get_contact_list()\n        with pytest.allure.step('Given info random contact from view page'):\n            index = randrange(len(all_contact_from_home_page))\n            contact_from_view_page = app.contact.get_contact_info_from_view_page(index)\n        with pytest.allure.step('Given a info from contact from edit page'):\n            contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        with pytest.allure.step('Then equal info from view page with info from edit page'):\n>           assert contact_from_view_page.home == contact_from_edit_page.home\nE           AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '\nE             - home|CD )!8 \nE             ?            -\nE             + home|CD )!8\n\ntest\\test_phones.py:33: AssertionError",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N7CDTT7"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "4848-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_phones.test_phones_on_view_page"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "240e20dc76043cd.json",
+  "parameterValues" : [ ]
+}

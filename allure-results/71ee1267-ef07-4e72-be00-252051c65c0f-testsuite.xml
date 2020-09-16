@@ -1,0 +1,763 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1600216407961" stop="1600216457642">
+  <name>test</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1600216407961" status="passed" stop="1600216416092">
+      <name>test_add_contact.test_add_contact[id:None;firstname:;middlename:None;lastname:]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216414782" status="passed" stop="1600216414802">
+          <name>Given a contacts list</name>
+          <title>Given a contacts list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216414809" status="passed" stop="1600216416064">
+          <name>When I add a contact id:None;firstname:;middlename:None;lastname: to the list</name>
+          <title>When I add a contact id:None;firstname:;middlename:None;lastname: to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216416073" status="passed" stop="1600216416092">
+          <name>Then the new contact list is equal to the old list with the added contact</name>
+          <title>Then the new contact list is equal to the old list with the added contact</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216416108" status="passed" stop="1600216423949">
+      <name>test_add_contact.test_add_contact[id:None;firstname:firstname:x3,.CB7;middlename:middlenames;lastname:lastname .]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216416225" status="passed" stop="1600216416243">
+          <name>Given a contacts list</name>
+          <title>Given a contacts list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216416250" status="passed" stop="1600216423909">
+          <name>When I add a contact id:None;firstname:firstname:x3,.CB7;middlename:middlenames;lastname:lastname . to the list</name>
+          <title>When I add a contact id:None;firstname:firstname:x3,.CB7;middlename:middlenames;lastname:lastname . to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216423917" status="passed" stop="1600216423949">
+          <name>Then the new contact list is equal to the old list with the added contact</name>
+          <title>Then the new contact list is equal to the old list with the added contact</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216423969" status="passed" stop="1600216425072">
+      <name>test_add_contact_to_group.test_add_contact_to_group</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216424115" status="passed" stop="1600216424136">
+          <name>Given check availability of at least one contract not in groups</name>
+          <title>Given check availability of at least one contract not in groups</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424144" status="passed" stop="1600216424166">
+          <name>Given check availability of at least one group</name>
+          <title>Given check availability of at least one group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424174" status="passed" stop="1600216424193">
+          <name>Given a contacts list not in groups</name>
+          <title>Given a contacts list not in groups</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424200" status="passed" stop="1600216424222">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424230" status="passed" stop="1600216424249">
+          <name>Given a random contact from contacts: [id:230;firstname:;middlename:None;lastname:, id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</name>
+          <title>Given a random contact from contacts: [id:230;firstname:;middlename:None;lastname:, id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424257" status="passed" stop="1600216424275">
+          <name>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut]</name>
+          <title>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424282" status="passed" stop="1600216424302">
+          <name>Given a contacts in a group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</name>
+          <title>Given a contacts in a group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216424311" status="passed" stop="1600216425044">
+          <name>When I add contact: id:239;firstname:;middlename:None;lastname: to group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</name>
+          <title>When I add contact: id:239;firstname:;middlename:None;lastname: to group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216425051" status="passed" stop="1600216425072">
+          <name>Then the new list contracts in group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK is equal to the old list with the added contact</name>
+          <title>Then the new list contracts in group: 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK is equal to the old list with the added contact</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216425088" status="passed" stop="1600216427188">
+      <name>test_add_group.test_add_group[None; ; ; ]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216425137" status="passed" stop="1600216425156">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216425163" status="passed" stop="1600216427158">
+          <name>When I add a group None; ; ;  to the list</name>
+          <title>When I add a group None; ; ;  to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216427166" status="passed" stop="1600216427188">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216427204" status="passed" stop="1600216428224">
+      <name>test_add_group.test_add_group[None; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216427243" status="passed" stop="1600216427262">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216427270" status="passed" stop="1600216428191">
+          <name>When I add a group None; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm to the list</name>
+          <title>When I add a group None; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216428201" status="passed" stop="1600216428224">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216428241" status="passed" stop="1600216429264">
+      <name>test_add_group.test_add_group[None; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216428282" status="passed" stop="1600216428303">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216428313" status="passed" stop="1600216429235">
+          <name>When I add a group None; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J to the list</name>
+          <title>When I add a group None; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216429243" status="passed" stop="1600216429264">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216429279" status="passed" stop="1600216430307">
+      <name>test_add_group.test_add_group[None; nameEMk4P; headerkPO6P; footermn2L7fr]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216429323" status="passed" stop="1600216429344">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216429351" status="passed" stop="1600216430277">
+          <name>When I add a group None; nameEMk4P; headerkPO6P; footermn2L7fr to the list</name>
+          <title>When I add a group None; nameEMk4P; headerkPO6P; footermn2L7fr to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216430285" status="passed" stop="1600216430306">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216430325" status="passed" stop="1600216431337">
+      <name>test_add_group.test_add_group[None; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216430372" status="passed" stop="1600216430392">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216430399" status="passed" stop="1600216431307">
+          <name>When I add a group None; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK to the list</name>
+          <title>When I add a group None; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216431315" status="passed" stop="1600216431337">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216431355" status="passed" stop="1600216432363">
+      <name>test_add_group.test_add_group[None; nameL; header1; footerJawD1Nut]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216431393" status="passed" stop="1600216431412">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216431419" status="passed" stop="1600216432328">
+          <name>When I add a group None; nameL; header1; footerJawD1Nut to the list</name>
+          <title>When I add a group None; nameL; header1; footerJawD1Nut to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216432337" status="passed" stop="1600216432363">
+          <name>Then the new group list is equal to the old list with the added group</name>
+          <title>Then the new group list is equal to the old list with the added group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216432379" status="passed" stop="1600216433567">
+      <name>test_db_matches_ui.test_group_list</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216432420" status="passed" stop="1600216433516">
+          <name>Given a groups list from UI</name>
+          <title>Given a groups list from UI</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216433523" status="passed" stop="1600216433542">
+          <name>Given a groups list from DB</name>
+          <title>Given a groups list from DB</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216433549" status="passed" stop="1600216433567">
+          <name>Then equal list from UI with list from DB</name>
+          <title>Then equal list from UI with list from DB</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216433583" status="passed" stop="1600216438181">
+      <name>test_del_contact.test_delete_first_contact</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216433622" status="passed" stop="1600216433641">
+          <name>Given check availability of at least one contract</name>
+          <title>Given check availability of at least one contract</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216433648" status="passed" stop="1600216433667">
+          <name>Given a contacts list</name>
+          <title>Given a contacts list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216433675" status="passed" stop="1600216433693">
+          <name>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:230;firstname:;middlename:None;lastname:, id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</name>
+          <title>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:230;firstname:;middlename:None;lastname:, id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216433700" status="passed" stop="1600216438155">
+          <name>When I delete contract: id:230;firstname:;middlename:None;lastname:</name>
+          <title>When I delete contract: id:230;firstname:;middlename:None;lastname:</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438162" status="passed" stop="1600216438181">
+          <name>Then the new list contracts is equal to the old list with the remove contact: id:230;firstname:;middlename:None;lastname: </name>
+          <title>Then the new list contracts is equal to the old list with the remove contact: id:230;firstname:;middlename:None;lastname: </title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216438197" status="passed" stop="1600216439119">
+      <name>test_del_contract_from_group.test_del_contact_from_group</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216438256" status="passed" stop="1600216438279">
+          <name>Given check availability of at least one group</name>
+          <title>Given check availability of at least one group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438287" status="passed" stop="1600216438315">
+          <name>Given a random group from group</name>
+          <title>Given a random group from group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438324" status="passed" stop="1600216438349">
+          <name>Given check availability of at least one contract in groups</name>
+          <title>Given check availability of at least one contract in groups</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438357" status="passed" stop="1600216438377">
+          <name>Given a contacts list in groups</name>
+          <title>Given a contacts list in groups</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438384" status="passed" stop="1600216438402">
+          <name>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:]</name>
+          <title>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438409" status="passed" stop="1600216438430">
+          <name>Given a group from contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .</name>
+          <title>Given a group from contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438437" status="passed" stop="1600216438459">
+          <name>Given a contacts in a group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</name>
+          <title>Given a contacts in a group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216438465" status="passed" stop="1600216439091">
+          <name>When I delete contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname . from group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</name>
+          <title>When I delete contact: id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname . from group: 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216439099" status="passed" stop="1600216439119">
+          <name>Then the new list contracts is equal to the old list with the remove group from contact id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .: </name>
+          <title>Then the new list contracts is equal to the old list with the remove group from contact id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .: </title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216439136" status="passed" stop="1600216440798">
+      <name>test_del_group.test_delete_some_group</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216439180" status="passed" stop="1600216439200">
+          <name>Given check availability of at least one group</name>
+          <title>Given check availability of at least one group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216439207" status="passed" stop="1600216439227">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216439234" status="passed" stop="1600216439251">
+          <name>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</name>
+          <title>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216439259" status="passed" stop="1600216440767">
+          <name>When I delete a group 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J to the list</name>
+          <title>When I delete a group 341; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J to the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216440776" status="passed" stop="1600216440798">
+          <name>Then the new group list is equal to the old list with the remove group</name>
+          <title>Then the new group list is equal to the old list with the remove group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216440814" status="passed" stop="1600216449394">
+      <name>test_edit_contact.test_edit_some_contact</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216440855" status="passed" stop="1600216440874">
+          <name>Given check availability of at least one contract</name>
+          <title>Given check availability of at least one contract</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216440881" status="passed" stop="1600216440900">
+          <name>Given a contacts list</name>
+          <title>Given a contacts list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216440907" status="passed" stop="1600216440935">
+          <name>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</name>
+          <title>Given a random contact from contacts: [id:229;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:231;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:233;firstname:;middlename:None;lastname:, id:234;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:236;firstname:qazwsx;middlename:None;lastname:tgbyhn, id:237;firstname:;middlename:None;lastname:, id:238;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname ., id:239;firstname:;middlename:None;lastname:, id:240;firstname:firstname:x3,.CB7;middlename:None;lastname:lastname .]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216440947" status="passed" stop="1600216449367">
+          <name>When I edit a contact: id:237;firstname:;middlename:None;lastname: to set new pram from contact: id:237;firstname:qazwsx;middlename:edcrfv;lastname:tgbyhn</name>
+          <title>When I edit a contact: id:237;firstname:;middlename:None;lastname: to set new pram from contact: id:237;firstname:qazwsx;middlename:edcrfv;lastname:tgbyhn</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216449374" status="passed" stop="1600216449394">
+          <name>Then the new contact pram list is equal to the old list with the change old contact</name>
+          <title>Then the new contact pram list is equal to the old list with the change old contact</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216449410" status="passed" stop="1600216450907">
+      <name>test_edit_group.test_edit_some_group</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216449540" status="passed" stop="1600216449559">
+          <name>Given check availability of at least one group</name>
+          <title>Given check availability of at least one group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216449568" status="passed" stop="1600216449588">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216449595" status="passed" stop="1600216449614">
+          <name>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</name>
+          <title>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216449621" status="passed" stop="1600216450877">
+          <name>When I edit a group: 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK to set new pram from group: 331; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222</name>
+          <title>When I edit a group: 331; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK to set new pram from group: 331; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216450886" status="passed" stop="1600216450906">
+          <name>Then the new group pram list is equal to the old list with the change old group</name>
+          <title>Then the new group pram list is equal to the old list with the change old group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216450926" status="passed" stop="1600216452786">
+      <name>test_edit_group.test_edit_some_group_name</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216450970" status="passed" stop="1600216450990">
+          <name>Given check availability of at least one group</name>
+          <title>Given check availability of at least one group</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216450999" status="passed" stop="1600216451019">
+          <name>Given a groups list</name>
+          <title>Given a groups list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216451026" status="passed" stop="1600216451044">
+          <name>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</name>
+          <title>Given a random group from groups: [260; test1; ; , 262; New Group 1; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 263; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 264; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 265; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 266; nameL; header1; footerJawD1Nut, 267; ; ; , 268; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 269; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 270; nameEMk4P; headerkPO6P; footermn2L7fr, 271; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 273; ; ; , 275; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 276; nameEMk4P; headerkPO6P; footermn2L7fr, 277; New Group 1; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 278; nameL; header1; footerJawD1Nut, 279; ; ; , 281; New Group 1; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 282; nameEMk4P; headerkPO6P; footermn2L7fr, 283; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 284; nameL; header1; footerJawD1Nut, 286; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 287; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 288; nameEMk4P; headerkPO6P; footermn2L7fr, 289; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 290; nameL; header1; footerJawD1Nut, 291; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 292; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 293; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 294; nameEMk4P; headerkPO6P; footermn2L7fr, 295; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 296; nameL; header1; footerJawD1Nut, 297; ; ; , 298; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 299; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 300; nameEMk4P; headerkPO6P; footermn2L7fr, 301; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 302; nameL; header1; footerJawD1Nut, 303; ; ; , 304; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 305; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 306; nameEMk4P; headerkPO6P; footermn2L7fr, 307; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 308; nameL; header1; footerJawD1Nut, 309; ; ; , 310; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 311; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 312; nameEMk4P; headerkPO6P; footermn2L7fr, 313; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 314; nameL; header1; footerJawD1Nut, 315; ; ; , 316; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 317; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 318; nameEMk4P; headerkPO6P; footermn2L7fr, 319; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 320; nameL; header1; footerJawD1Nut, 321; ; ; , 322; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 323; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 324; nameEMk4P; headerkPO6P; footermn2L7fr, 325; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 326; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 327; ; ; , 328; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 329; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 330; nameEMk4P; headerkPO6P; footermn2L7fr, 331; gvdfbvcb22; bvcbvcbvcgdfgfd222; bcvbvcgfdgfdgdf222, 332; nameL; header1; footerJawD1Nut, 333; ; ; , 334; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 335; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 336; nameEMk4P; headerkPO6P; footermn2L7fr, 337; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 338; nameL; header1; footerJawD1Nut, 339; ; ; , 340; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 342; nameEMk4P; headerkPO6P; footermn2L7fr, 343; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 344; nameL; header1; footerJawD1Nut, 345; ; ; , 346; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 347; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 348; nameEMk4P; headerkPO6P; footermn2L7fr, 349; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 350; nameL; header1; footerJawD1Nut, 351; ; ; , 352; nameGVIFf; header0AOKgFOiVO; footervWNCYffwm, 353; name; headerjb7Vfr5r3x48h4r0; footeriyE6VFAY78J, 354; nameEMk4P; headerkPO6P; footermn2L7fr, 355; nameCWL; headerRXulHFswSK5h3cI; footerLP62FWVgPYwxK, 356; nameL; header1; footerJawD1Nut]</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216451051" status="passed" stop="1600216451737">
+          <name>When I edit a group: 303; ; ;  to set new pram from group: 303; New Group 1; None; None</name>
+          <title>When I edit a group: 303; ; ;  to set new pram from group: 303; New Group 1; None; None</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216451745" status="passed" stop="1600216452786">
+          <name>Then the new group pram list is equal to the old list with the change old group</name>
+          <title>Then the new group pram list is equal to the old list with the change old group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216452802" status="passed" stop="1600216454376">
+      <name>test_match_contracts.test_match_contact</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216452842" status="passed" stop="1600216454318">
+          <name>Given a contact list from UI</name>
+          <title>Given a contact list from UI</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454325" status="passed" stop="1600216454347">
+          <name>Given a contact list from DB</name>
+          <title>Given a contact list from DB</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454357" status="passed" stop="1600216454376">
+          <name>Then equal list from UI with list from DB</name>
+          <title>Then equal list from UI with list from DB</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216454393" status="passed" stop="1600216454837">
+      <name>test_phones.test_phones_on_home_page</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216454529" status="passed" stop="1600216454548">
+          <name>Given a contact list from UI</name>
+          <title>Given a contact list from UI</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454555" status="passed" stop="1600216454573">
+          <name>Given info random contact from home page</name>
+          <title>Given info random contact from home page</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454581" status="passed" stop="1600216454811">
+          <name>Given a info from contact from edit page</name>
+          <title>Given a info from contact from edit page</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454818" status="passed" stop="1600216454837">
+          <name>Then equal info from home page with info from edit page</name>
+          <title>Then equal info from home page with info from edit page</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1600216454853" status="failed" stop="1600216457642">
+      <name>test_phones.test_phones_on_view_page</name>
+      <failure>
+        <message>AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '
+  - home|CD )!8 
+  ?            -
+  + home|CD )!8</message>
+        <stack-trace>app = &lt;fixture.application.Application object at 0x00000140ED6070D0&gt;
+
+    def test_phones_on_view_page(app):
+        with pytest.allure.step('Given a contact list from UI'):
+            all_contact_from_home_page = app.contact.get_contact_list()
+        with pytest.allure.step('Given info random contact from view page'):
+            index = randrange(len(all_contact_from_home_page))
+            contact_from_view_page = app.contact.get_contact_info_from_view_page(index)
+        with pytest.allure.step('Given a info from contact from edit page'):
+            contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)
+        with pytest.allure.step('Then equal info from view page with info from edit page'):
+&gt;           assert contact_from_view_page.home == contact_from_edit_page.home
+E           AssertionError: assert 'home|CD )!8' == 'home|CD )!8 '
+E             - home|CD )!8 
+E             ?            -
+E             + home|CD )!8
+
+test\test_phones.py:33: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="DESKTOP-N7CDTT7"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1600216454892" status="passed" stop="1600216454910">
+          <name>Given a contact list from UI</name>
+          <title>Given a contact list from UI</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216454918" status="passed" stop="1600216456195">
+          <name>Given info random contact from view page</name>
+          <title>Given info random contact from view page</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216456202" status="passed" stop="1600216457611">
+          <name>Given a info from contact from edit page</name>
+          <title>Given a info from contact from edit page</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1600216457619" status="failed" stop="1600216457638">
+          <name>Then equal info from view page with info from edit page</name>
+          <title>Then equal info from view page with info from edit page</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
