@@ -40,12 +40,19 @@ class Contact:
         self.group = group
 
     def __repr__(self):
-        return "id:%s;firstname:%s;middlename:%s;lastname:%s" % \
-               (self.id, self.firstname, self.middlename, self.lastname)
+        return "id:%s;firstname:%s;middlename:%s;lastname:%s;home:%s;" \
+               "mobile:%s;work:%s;phone2:%s;email:%s;email2:%s;email3:%s;" \
+               "all_phones_from_homepage:%s;all_emails_from_homepage:%s" % \
+               (self.id, self.firstname, self.middlename, self.lastname, self.home, self.mobile, self.work, self.phone2,
+                self.email, self.email2, self.email3, self.all_phones_from_homepage, self.all_emails_from_homepage)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) \
-               and self.firstname == other.firstname and self.lastname == other.lastname
+               and self.firstname == other.firstname and self.lastname == other.lastname \
+               and ((self.all_phones_from_homepage is None and other.all_phones_from_homepage is None)
+                    or (self.all_phones_from_homepage == other.all_phones_from_homepage)) \
+               and ((self.all_emails_from_homepage is None and other.all_emails_from_homepage is None)
+                    or (self.all_emails_from_homepage == other.all_emails_from_homepage))
 
     def id_or_max(self):
         if self.id:
